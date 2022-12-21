@@ -1,0 +1,119 @@
+<html>
+
+<head>
+<title>Website Project</title>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+
+<style>
+*{
+margin:0;
+padding:0;
+}
+label
+{
+ width:100px;
+display:inline-block;
+}
+nav
+{
+background-color:#0000FF;
+display:grid;
+place-items:center;
+
+}
+nav ul li
+{
+display:inline-block;
+padding:20px;
+text-decoration:ul;
+color:#000;
+transition:0.2s ease-in;
+
+}
+nav ul li a
+{
+color:white;
+font-weight:bold;
+}
+nav ul a:hover
+{
+background-color:green;
+color:white;
+}
+
+.text
+{
+width:100%;
+position:center;
+margin-top:-40%;
+}
+.text h1
+{
+color:red;
+text-align:center;
+font-family:'Courgette',cursive ;
+}
+.txt
+{
+width:30%;
+border-radius:5px;
+}
+</head>
+</style>
+
+<body style="background-color:#87CEEB">
+<header>
+<nav>
+<ul>
+<li><a href="Tickets.html">TICKETS</a></li>
+<li><a href="Food.html">FOOD</a></li>
+<li><a href="parking.html">PARKING</a></li>
+<li><a href="project.html">HOME</a></li>
+</ul>
+</nav>
+</header>
+
+<h1 align="center">Fill Up Details!</h1>
+<hr><hr>
+<form align="center" action="details_entry.php" method="post">
+<br>
+<label><b>Name</b></label>
+<input type="text" name="Name" class="txt" placeholder="Enter Full Name"><br><br>
+<label><b>Phone</b></label>
+<input type="text" name="Phone"  class="txt" placeholder="Phone Number"><br><br>
+<label><b>Email</b></label>
+<input type="text" name="Email"  class="txt" placeholder="Enter your Email Id"><br><br>
+<label><b>Movie</b></label>
+<input type="text" name="Movie"  class="txt" placeholder="Enter Movie Name"><br><br>
+<label><b>Date</b></label>
+<input type="text"  name="Date" class="txt" placeholder="dd-mm-yyyy"><br><br>
+<label><b>Session</b></label>
+<input type="text"  name="Session" class="txt"placeholder="Morning/Afternoon/Evening/Night"><br><br>
+<label><b>Time</b></label>
+<input type="text" name="Time" class="txt"placeholder="Enter Time slot"><br><br>
+<label><b>Type</b></label>
+<input type="text" name="Type"  class="txt" placeholder="Royal/Marvel/Executive/Builder Class"><br><br>
+<label><b>Quantity</b></label>
+<input type="text" name="Quantity"  class="txt" placeholder="Quantity of Tichets"><br><br>
+<label><b>Food</b></label>
+<input type="text" name="Food" class="txt" placeholder="Food if any"><br><br>
+<label><b>Parking</b></label>
+<input type="text" name="Parking"  class="txt" placeholder="Two wheeler/Four wheeler"><br><br>
+<label><b>Space</b></label>
+<input type="text" name="Space"  class="txt" placeholder="Enter no. of parking space you need"><br><br>
+<input type="submit" name="save" value="Submit" style="font-size:20px">
+<br><br>
+<hr>
+<hr>
+<h3 align="left">If yo wish to cancel you can do it here.<br>
+(You can cancel it within 2 days)</h3>
+
+
+
+
+
+</form>
+
+</body>
+
+</html>

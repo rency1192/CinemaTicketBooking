@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html form</title>
+    <style>
+        .center {
+            margin: auto;
+            width: 50%;
+            border: 3px solid green;
+            padding: 5px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class ="center">
+        <center>
+            <h1>
+                <center>Student admission details</center>
+            </h1>
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                             <label for="fname" >Enter your name   :</label>
+                        </td>
+                        <td>
+                            <input type="text" id="fname" name="username" maxlength="50" placeholder="Enter name ">
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                <label for="uemail">Email  :</label>
+                            </td>
+                            <td>
+                                <input type="email" id="uemail" name="usermail" placeholder="xyz@gmail.com" required />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gender">Choose your gender :</label>
+                        </td>
+                        <td>
+                            Male <input type="radio" value="f" name="male">
+                            female <input type="radio" value="m" name="female">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Create your password : </label>
+                        </td>
+                        <td>
+                            <input type="password">
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Confirm password:</label>
+                        </td>
+                        <td>
+                            <input type="passwor">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mobile no  :">Mobile no:</label>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dob">Choose your dob:</label>
+                        </td>
+                        <td>
+                            <input type="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="address">Enter your address:</label>
+                        </td>
+                        <td>
+                            <textarea name="address" id="home" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr> 
+                    <tr>
+                        <td>
+                            <label for="location">Choose your location :</label>
+                        </td>
+                        <td>
+                            <select name="country" id="city">
+                                <option value="select">select</option>
+                                <option value="Surat">surat</option>
+                                <option value="vadodra">vadodra</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                                <button>submit</button>
+                                <button>Clear all</button>
+                            </center>
+                        </td>
+                    </tr>      
+                </table>
+            </form>
+        </center>
+    </div>
+</body>
+</html>

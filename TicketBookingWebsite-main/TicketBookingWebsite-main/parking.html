@@ -1,0 +1,124 @@
+<html>
+<head>
+<style>
+*{
+margin:0;
+padding:0;
+}
+nav
+{
+background-color:#57D7AC;
+display:grid;
+place-items:center;
+
+}
+label
+{
+ width:150px;
+display:inline-block;
+}
+.txt
+{
+width:30%;
+border-radius:5px;
+}
+nav ul li
+{
+display:inline-block;
+padding:20px;
+text-decoration:ul;
+color:#000;
+transition:0.2s ease-in;
+
+}
+nav ul li a
+{
+color:black;
+font-weight:bold;
+}
+nav ul a:hover
+{
+background-color:green;
+color:white;
+}
+.container
+{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+padding:30px 80px;
+grid-row-gap:20px;
+grid-column-gap:20px;
+}
+.box
+{
+background:#ADD8E6;
+padding:40px 50px 30px;
+text-align:center;
+border-radius:30px;
+border:solid green;
+font-family:Tahoma;
+}
+.txt
+{
+width:30%;
+border-radius:5px;
+}
+
+</style>
+</head>
+
+<body  style="background-color:#CFFFFF">
+
+<header>
+<nav>
+<ul>
+<li><a href="project.html">HOME</a></li>
+<li><a href=Food.html#">FOOD</a></li>
+<li><a href="Tickets.html">TICKETS</a></li>
+<li><a href="fill.html">FILL</a></li>
+</ul>
+</nav>
+</header>
+
+<h1><center><font color="red">Parking Details</font></center><h1>
+<div class="container">
+<div class="box">
+<h6>Two wheelers</h6>
+<h6>Price-10Rs</h6>
+</div>
+
+<div class="box">
+<h6>Four wheelers</h6>
+<h6>Price-20Rs</h6>
+</div>
+</div>
+<hr>
+
+<form align="center" action="parking_details.php" method="post">
+
+<label>Name</label>
+<input type="text" name="Name" class="txt" placeholder="Enter Full Name"><br>
+
+<label><b>Vehicle</b></label>
+<input type="text" name=" VehicleName" class="txt" placeholder="Enter Vehicle Name"><br>
+
+<label><b>Number</b></label>
+<input type="text" name="Number" class="txt" placeholder="Enter Vehicle Number"><br>
+
+<label><b>Entry Time</b></label>
+<input type="text" name="EntryTime" class="txt" placeholder="Enter Entry Time"><br>
+
+<label><b>Enxit Time</b></label>
+<input type="text" name="ExitTime" class="txt" placeholder="Enter Exit Time"><br>
+
+
+<input type="submit" name="save" value="Submit" style="font-size:20px" >
+
+</form>
+
+</body>
+
+
+
+
+</html>

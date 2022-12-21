@@ -1,0 +1,105 @@
+<html>
+
+<head>
+
+<link rel="stylesheet" href="css/style.css" type="text/css">
+
+<style>
+*{
+margin:0;
+padding:0;
+}
+
+nav
+{
+background-color:#57D7AC;
+display:grid;
+place-items:center;
+
+}
+nav ul li
+{
+display:inline-block;
+padding:20px;
+text-decoration:ul;
+color:#000;
+transition:0.2s ease-in;
+
+}
+nav ul li a
+{
+color:white;
+font-weight:bold;
+}
+nav ul a:hover
+{
+background-color:green;
+color:white;
+}
+label
+{
+width: 100%;
+display:inline-block;
+}
+
+
+.text
+{
+width:100%;
+position:center;
+margin-top:-40%;
+}
+.text h1
+{
+color:purple;
+text-align:center;
+font-family:'Courgette',cursive ;
+}
+</head>
+</style>
+
+<body bgcolor="#CFFFFF">
+<header>
+<nav>
+<ul>
+<li><a href="Tickets.html">TICKETS</a></li>
+<li><a href="Food.html">FOOD</a></li>
+<li><a href="parking.html">PARKING</a></li>
+<li><a href="fill.html">FILL</a></li>
+<li><a href="project.html">HOME</a></li>
+</ul>
+</nav>
+</header>
+
+
+<h3><center>If you want to cancel your bookings then you cancel it out</center></h3>
+<h3> Time period for cancellation is within two days</h3>
+<h3> You can cancel it by filling out this form</h3>
+<br><br>
+<hr><br>
+<form align="center" action="cancel_details.php" method="post">
+<label>Name</label>
+<input type="text" placeholder="Your Name" name="Name"><br><br>
+
+<label>Email</label>
+<input type="text" placeholder="Your Email" name="Email"><br><br>
+
+<label>Date</label>
+<input type="text" placeholder="Date of show" name="Date"><br><br>
+
+<label>Time</label>
+<input type="text" placeholder="Time of show" name="Time"><br><br>
+
+<label>Cancel</label>
+<input type="text" placeholder="Yes/No" name="Cancel"><br><br>
+
+<input type="submit" name="save" value="Submit" style="font-size:20px">
+
+</form>
+
+
+
+
+</body>
+
+</html>
